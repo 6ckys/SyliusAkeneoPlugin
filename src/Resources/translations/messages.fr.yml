@@ -1,0 +1,120 @@
+sylius:
+    ui:
+        admin:
+            akeneo:
+                not_configured_yet: L'API doit être configurée avant de pouvoir continuer.
+                delete: Supprimer
+                add: Ajouter
+                submit: Enregistrer les modifications
+                no: Non
+                yes: Oui
+                save: Enregistrer
+                api_configuration:
+                    title: Configurer l'API
+                    subtitle: Configuration des informations d'API Akeneo
+                    base_url: URL base Akeneo
+                    username: Nom d'utilisateur Akeneo
+                    user_help: Cet utilisateur doit disposer des permissions de listage
+                    password: Mot de passe Akeneo
+                    client_id: Akeneo API client ID
+                    client_secret: Akeneo API client Secret
+                    pagination: Valeur comprise entre 1 et 100
+                    is_enterprise: Est-ce Akeneo édition entreprise
+                import_referential_attributes: Importer des attributs référentiels
+                product_filter_rules:
+                    title: Règles de filtre produit
+                    subtitle: Configuration des règles de filtre produit
+                    mode: Mode
+                    simple: Simple
+                    advanced: Avancé
+                    advanced_filter: Filtre avancé
+                    advanced_help: Le filtre avancé sert à configurer la query pour l'appel /api/rest/v1/products,
+                        le connecteur s'occupe de convertir la query pour l'adapter sur l'appel des produits model
+                    channel: Channel Akeneo
+                    completeness_type: Type de complétude
+                    completeness_type_help: Choix du type de complétude d'un produit Akeneo
+                    locales: Locales
+                    completeness_value: Valeur de complétude
+                    completeness_value_help: Entrer la valeur de complétude d'un produit Akeneo à importer (compris entre 0 et 100)
+                    status: Statut
+                    status_help: Définir le statut du produit Akeneo à importer
+                    updated_mode: Mode de mise à jour
+                    updated_before: Mise à jour avant
+                    updated_after: Mise à jour après
+                    updated: Mise à jour depuis N jours
+                    families: Familles produit à exclure
+                    families_help: Selectionner les familles à exclure du produit
+                    no_condition: Pas de condition
+                    enabled: Actif
+                    disabled: Inactif
+                    lower_than: Plus petit que
+                    lower_than_on_all_locales: Plus petit que - Sur toutes les locales
+                    lower_or_equals_than_on_all_locales: Plus petit que ou égale à - Sur toutes les locales
+                    greater_than: Plus grand que
+                    greater_or_equals_than: Plus grand que ou égale à
+                    greater_or_equals_than_on_all_locales: Plus grand que ou égale à - Sur toutes les locales
+                    greater_than_on_all_locales: Plus grand que - Sur toutes les locales
+                    equals: Egale
+                    differ: Différent
+                    between: Entre
+                    since_last_x_days: Depuis x jours
+                categories:
+                    title: Catégories
+                    subtitle: Configuration des catégories
+                    categories_to_exclude: Catégories à exclure
+                    main_category: Catégorie principale
+                    root_categories: Catégories racines de Sylius
+                    empty_local_replace_by: Remplacer la locale vide par
+                    use_akeneo_positions: Importer la position des catégories d'Akeneo
+                products:
+                    title: Produits
+                    subtitle: Configuration des produits
+                    akeneo_price_attribute: Attribut Akeneo du prix
+                    akeneo_enabled_channels_attribute: Attribut Akeneo des channels actifs
+                    attribute: Attribut
+                    value: Valeur
+                    import_media_files: Import de média
+                    akeneo_attributes: Attributs Akeneo
+                    sylius_attribute: Attribut Sylius
+                    akeneo_attribute: Attribut Akeneo
+                    regenerate_url_rewrites: "Autoriser la modification des URL"
+                attributes:
+                    title: Attributs
+                    subtitle: Configuration des attributs
+                medias:
+                    medias: Médias
+                editions:
+                    ce: Community Edition
+                    ge: Growth Edition
+                    ee: Enterprise Edition
+                    serenity: Serenity Edition
+        reference_entity: 'Entité référentielle'
+        asset: 'Asset'
+        metric: 'Métrique'
+    form:
+        attribute_type:
+            reference_entity: 'Entité référentielle'
+            asset: 'Asset'
+            metric: 'Métrique'
+            akeneo_table: 'Tableau'
+akeneo:
+    ui:
+        admin:
+            authentication_successfully_succeeded: Authentification réussie
+            changes_successfully_saved: Les modifications ont bien été enregistrées
+sylius_plus:
+    rbac:
+        parent:
+            plugin_synolia_akeneo_configurations: AKENEO Configuration
+            plugin_synolia_akeneo_product_filter_rules: AKENEO Règles de filtre produit
+            plugin_synolia_akeneo_categories: AKENEO Catégories
+            plugin_synolia_akeneo_products: AKENEO Produits
+            plugin_synolia_akeneo_attributes: AKENEO Attributs
+            plugin_synolia_akeneo_medias: AKENEO Medias
+            attribute_type_mapping: AKENEO Attribute Type Mapping
+        sylius_akeneo_connector_api_configuration: Api Configuration
+        sylius_akeneo_connector_product_filter_rules: Règles de filtre produit
+        sylius_akeneo_connector_categories: Catégories
+        sylius_akeneo_connector_products: Produits
+        sylius_akeneo_connector_attributes: Attributs
+        sylius_akeneo_connector_medias: Medias
